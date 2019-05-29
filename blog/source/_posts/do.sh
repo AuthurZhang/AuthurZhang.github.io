@@ -1,0 +1,2 @@
+./cgd.sh
+./push.sh
