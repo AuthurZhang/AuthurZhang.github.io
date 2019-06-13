@@ -96,14 +96,17 @@
 
 
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="Coding Interviews 03">
+  <meta name="description" content="剑指offer 第三题 倒序打印链表题目描述输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。 思路use stack 代码1234567891011121314public static ArrayList&amp;lt;Integer&amp;gt; printListFromTailToHead(ListNode listNode) &amp;#123;    Stack&amp;lt;Integer&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coding Interviews 03 倒序打印链表">
 <meta property="og:url" content="http://yoursite.com/2019/06/03/Coding-Interviews-03/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="剑指offer 第三题 倒序打印链表题目描述输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。 思路use stack 代码1234567891011121314public static ArrayList&amp;lt;Integer&amp;gt; printListFromTailToHead(ListNode listNode) &amp;#123;    Stack&amp;lt;Integer&amp;gt">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-03T15:35:52.665Z">
+<meta property="og:updated_time" content="2019-06-03T16:07:48.988Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Coding Interviews 03">
+<meta name="twitter:title" content="Coding Interviews 03 倒序打印链表">
+<meta name="twitter:description" content="剑指offer 第三题 倒序打印链表题目描述输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。 思路use stack 代码1234567891011121314public static ArrayList&amp;lt;Integer&amp;gt; printListFromTailToHead(ListNode listNode) &amp;#123;    Stack&amp;lt;Integer&amp;gt">
 
 
 
@@ -121,7 +124,7 @@
   };
 </script>
 
-  <title>Coding Interviews 03 | Hexo</title>
+  <title>Coding Interviews 03 倒序打印链表 | Hexo</title>
   
 
 
@@ -303,7 +306,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Coding Interviews 03
+          <h1 class="post-title" itemprop="name headline">Coding Interviews 03 倒序打印链表
 
               
             
@@ -332,6 +335,22 @@
               <time title="Erstellt: 2019-06-03 23:35:52" itemprop="dateCreated datePublished" datetime="2019-06-03T23:35:52+08:00">2019-06-03</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Bearbeitet am</span>
+                
+                <time title="Geändert am: 2019-06-04 00:07:48" itemprop="dateModified" datetime="2019-06-04T00:07:48+08:00">2019-06-04</time>
+              
             
           </span>
 
@@ -364,7 +383,10 @@
       
 
       
-        
+        <a id="more"></a>
+<h1 id="剑指offer-第三题-倒序打印链表"><a href="#剑指offer-第三题-倒序打印链表" class="headerlink" title="剑指offer 第三题 倒序打印链表"></a>剑指offer 第三题 倒序打印链表</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>use stack</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public static ArrayList&lt;Integer&gt; printListFromTailToHead(ListNode listNode) &#123;</span><br><span class="line">    Stack&lt;Integer&gt; stack = new Stack&lt;Integer&gt;();</span><br><span class="line">    ArrayList&lt;Integer&gt; result = new ArrayList&lt;Integer&gt;();</span><br><span class="line">    //push into stack</span><br><span class="line">    <span class="keyword">while</span>(listNode!=null)&#123;</span><br><span class="line">        stack.push(listNode.val);</span><br><span class="line">        listNode = listNode.next;</span><br><span class="line">    &#125;</span><br><span class="line">    //pop and push into list</span><br><span class="line">    <span class="keyword">while</span> (!stack.isEmpty())&#123;</span><br><span class="line">        result.add(stack.pop());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -446,8 +468,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -493,6 +524,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#剑指offer-第三题-倒序打印链表"><span class="nav-number">1.</span> <span class="nav-text">剑指offer 第三题 倒序打印链表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.2.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.3.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
