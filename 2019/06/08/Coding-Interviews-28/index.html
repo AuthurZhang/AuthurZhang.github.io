@@ -96,14 +96,18 @@
 
 
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="Coding-Interviews-28">
-<meta property="og:url" content="http://yoursite.com/2019/06/17/Coding-Interviews-28/index.html">
+  <meta name="description" content="剑指offer 第二十八题 数组中超过一半的数字题目描述数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0">
+<meta name="keywords" content="Data Structure,Tree">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coding Interviews 28 数组中超过一半的数字">
+<meta property="og:url" content="http://yoursite.com/2019/06/08/Coding-Interviews-28/index.html">
 <meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="剑指offer 第二十八题 数组中超过一半的数字题目描述数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-06-17T04:51:43.406Z">
+<meta property="og:updated_time" content="2019-06-18T13:29:18.964Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Coding-Interviews-28">
+<meta name="twitter:title" content="Coding Interviews 28 数组中超过一半的数字">
+<meta name="twitter:description" content="剑指offer 第二十八题 数组中超过一半的数字题目描述数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0">
 
 
 
@@ -111,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/06/17/Coding-Interviews-28/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/08/Coding-Interviews-28/">
 
 
 
@@ -121,7 +125,7 @@
   };
 </script>
 
-  <title>Coding-Interviews-28 | My Blog</title>
+  <title>Coding Interviews 28 数组中超过一半的数字 | My Blog</title>
   
 
 
@@ -324,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/17/Coding-Interviews-28/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/08/Coding-Interviews-28/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhang Zhoushen">
@@ -341,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Coding-Interviews-28
+          <h1 class="post-title" itemprop="name headline">Coding Interviews 28 数组中超过一半的数字
 
               
             
@@ -367,12 +371,46 @@
                 
               
 
-              <time title="Created: 2019-06-17 12:51:43" itemprop="dateCreated datePublished" datetime="2019-06-17T12:51:43+08:00">2019-06-17</time>
+              <time title="Created: 2019-06-08 15:51:43" itemprop="dateCreated datePublished" datetime="2019-06-08T15:51:43+08:00">2019-06-08</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-06-18 21:29:18" itemprop="dateModified" datetime="2019-06-18T21:29:18+08:00">2019-06-18</time>
+              
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Coding-Interview/" itemprop="url" rel="index"><span itemprop="name">Coding Interview</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -402,7 +440,11 @@
       
 
       
-        
+        <h1 id="剑指offer-第二十八题-数组中超过一半的数字"><a href="#剑指offer-第二十八题-数组中超过一半的数字" class="headerlink" title="剑指offer 第二十八题 数组中超过一半的数字"></a>剑指offer 第二十八题 数组中超过一半的数字</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0</p>
+<a id="more"></a>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>Use hashmap to count and find the great num.</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。</span><br><span class="line"> * @param array</span><br><span class="line"> * @<span class="built_in">return</span></span><br><span class="line"> */</span><br><span class="line">public int MoreThanHalfNum_Solution(int [] array) &#123;</span><br><span class="line">    int criterion = array.length/2;</span><br><span class="line">    //HashMap <span class="keyword">for</span> count</span><br><span class="line">    HashMap&lt;Integer,Integer&gt; hashMap = new HashMap&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span>(int i = 0; i &lt; array.length; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!hashMap.containsKey(array[i]))&#123;</span><br><span class="line">            hashMap.put(array[i],1);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            hashMap.put(array[i],hashMap.get(array[i])+1);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //traversing</span><br><span class="line">    int result = 0;</span><br><span class="line">    <span class="keyword">for</span>(Integer key : hashMap.keySet())&#123;</span><br><span class="line">        <span class="keyword">if</span>(hashMap.get(key)&gt;criterion)&#123;</span><br><span class="line">            result =  key;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -423,6 +465,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Data-Structure/" rel="tag"># Data Structure</a>
+          
+            <a href="/tags/Tree/" rel="tag"># Tree</a>
+          
+        </div>
+      
 
       
       
@@ -432,8 +482,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/17/Coding-Interviews-27/" rel="next" title="Coding-Interviews-27">
-                <i class="fa fa-chevron-left"></i> Coding-Interviews-27
+              <a href="/2019/06/08/Coding-Interviews-26/" rel="next" title="Coding Interviews 26 二叉搜索树与双向链表">
+                <i class="fa fa-chevron-left"></i> Coding Interviews 26 二叉搜索树与双向链表
               </a>
             
           </div>
@@ -442,8 +492,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/17/Coding-Interviews-29/" rel="prev" title="Coding-Interviews-29">
-                Coding-Interviews-29 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/08/Coding-Interviews-29/" rel="prev" title="Coding Interviews 29 最小的k个数">
+                Coding Interviews 29 最小的k个数 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -488,8 +538,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -506,7 +565,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">31</span>
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -562,7 +621,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -615,6 +676,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#剑指offer-第二十八题-数组中超过一半的数字"><span class="nav-number">1.</span> <span class="nav-text">剑指offer 第二十八题 数组中超过一半的数字</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.2.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.3.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
