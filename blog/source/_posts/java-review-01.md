@@ -14,7 +14,7 @@ In this chapter, I would like to introduce the  collection of Java and then list
 <!--more-->
 
 ## Containers taonomy
-![](../images/java_containers_01.jpg)
+![](/images/java_containers_01.jpg)
 
 ## List
 ### The Difference between LinkedList and ArrayList?
