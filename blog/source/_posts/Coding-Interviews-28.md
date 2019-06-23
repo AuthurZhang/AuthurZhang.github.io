@@ -2,8 +2,7 @@
 title: Coding Interviews 28 数组中超过一半的数字
 date: 2019-06-08 15:51:43
 tags:
-- Tree
-- Data Structure
+- HashMap
 categories: 
 - Coding Interview
 ---
