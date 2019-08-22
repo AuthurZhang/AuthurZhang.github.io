@@ -5,7 +5,7 @@ tags:
 - LeetCode
 categories: 
 -LeetCode
-top:100
+top: 100
 ---
 
 # LeetCode Quesion
