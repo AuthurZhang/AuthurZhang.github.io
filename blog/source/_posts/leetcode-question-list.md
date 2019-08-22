@@ -4,7 +4,7 @@ date: 2019-07-20 22:39:57
 tags:
 - LeetCode
 categories: 
--LeetCode
+- LeetCode
 top: 100
 ---
 
