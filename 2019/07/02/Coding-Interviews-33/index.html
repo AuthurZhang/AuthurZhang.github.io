@@ -96,14 +96,17 @@
 
 
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/2019/05/30/test/index.html">
+  <meta name="description" content="剑指offer 第三十三题 丑数题目描述把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coding Interviews 33 丑数">
+<meta property="og:url" content="http://yoursite.com/2019/07/02/Coding-Interviews-33/index.html">
 <meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="剑指offer 第三十三题 丑数题目描述把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-30T09:16:42.560Z">
+<meta property="og:updated_time" content="2019-08-22T09:17:01.556Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
+<meta name="twitter:title" content="Coding Interviews 33 丑数">
+<meta name="twitter:description" content="剑指offer 第三十三题 丑数题目描述把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。">
 
 
 
@@ -111,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/30/test/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/02/Coding-Interviews-33/">
 
 
 
@@ -121,7 +124,7 @@
   };
 </script>
 
-  <title>test | My Blog</title>
+  <title>Coding Interviews 33 丑数 | My Blog</title>
   
 
 
@@ -324,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/30/test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/02/Coding-Interviews-33/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhang Zhoushen">
@@ -341,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test
+          <h1 class="post-title" itemprop="name headline">Coding Interviews 33 丑数
 
               
             
@@ -367,12 +370,46 @@
                 
               
 
-              <time title="Created: 2019-05-30 17:16:42" itemprop="dateCreated datePublished" datetime="2019-05-30T17:16:42+08:00">2019-05-30</time>
+              <time title="Created: 2019-07-02 14:55:23" itemprop="dateCreated datePublished" datetime="2019-07-02T14:55:23+08:00">2019-07-02</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-08-22 17:17:01" itemprop="dateModified" datetime="2019-08-22T17:17:01+08:00">2019-08-22</time>
+              
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Coding-Interview/" itemprop="url" rel="index"><span itemprop="name">Coding Interview</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -402,7 +439,11 @@
       
 
       
-        
+        <h1 id="剑指offer-第三十三题-丑数"><a href="#剑指offer-第三十三题-丑数" class="headerlink" title="剑指offer 第三十三题 丑数"></a>剑指offer 第三十三题 丑数</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。</p>
+<a id="more"></a>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>like the relationship function of DP<br>ug[i] = ug[before]<em>2 || ug [before</em>3] || ug[before]*5</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">GetUglyNumber_Solution</span><span class="params">(<span class="keyword">int</span> index)</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(index == <span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//like dp</span></span><br><span class="line">    <span class="keyword">int</span>[] uglyArray = <span class="keyword">new</span> <span class="keyword">int</span>[index];</span><br><span class="line">    uglyArray[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> para2 = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> para3 = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> para5 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ug[i] = ug[before]*2 || ug [before*3] || ug[before]*5</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; index; i++)&#123;</span><br><span class="line">        uglyArray[i] = Math.min(uglyArray[para2]*<span class="number">2</span>,</span><br><span class="line">                Math.min(uglyArray[para3]*<span class="number">3</span>,uglyArray[para5]*<span class="number">5</span>));</span><br><span class="line">        <span class="keyword">if</span>(uglyArray[i] == uglyArray[para2]*<span class="number">2</span>)&#123;</span><br><span class="line">            para2++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(uglyArray[i] == uglyArray[para3]*<span class="number">3</span>)&#123;</span><br><span class="line">            para3++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(uglyArray[i] == uglyArray[para5]*<span class="number">5</span>)&#123;</span><br><span class="line">            para5++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> uglyArray[index-<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -432,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/29/msc-project/" rel="next" title="msc project">
-                <i class="fa fa-chevron-left"></i> msc project
+              <a href="/2019/07/01/Coding-Interviews-32/" rel="next" title="Coding Interviews 32 把数组排成最小的数">
+                <i class="fa fa-chevron-left"></i> Coding Interviews 32 把数组排成最小的数
               </a>
             
           </div>
@@ -442,8 +483,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/03/Coding-Interviews-01/" rel="prev" title="Coding Interviews 01 二维数组中的查找">
-                Coding Interviews 01 二维数组中的查找 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/02/Coding-Interviews-34/" rel="prev" title="Coding Interviews 34 第一个只出现一次的字符">
+                Coding Interviews 34 第一个只出现一次的字符 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -488,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -623,6 +673,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#剑指offer-第三十三题-丑数"><span class="nav-number">1.</span> <span class="nav-text">剑指offer 第三十三题 丑数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.2.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.3.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
