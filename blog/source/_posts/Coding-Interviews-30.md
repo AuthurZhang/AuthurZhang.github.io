@@ -16,7 +16,7 @@ HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。今天
 Solution 1：dp. It is easy to find that dp[i] = Max(array[i],dp[i-1]+array[i]).
 
 ## 代码
-``` bash
+``` java
     /**
      * 连续子数组的最大值
      * dp f(n) = max(f(n-1)+array(n),array(n))
